@@ -1,0 +1,5 @@
+# Project exclude paths
+/quan_renting_api_server/target/
+/quan_renting_dubbo_server/quan_renting_dubbo_server_generator/target/
+/quan_renting_dubbo_server/quan_renting_dubbo_server_house/quan_renting_dubbo_server_house_interface/target/
+/quan_renting_dubbo_server/quan_renting_dubbo_server_house/quan_renting_dubbo_server_house_server/target/

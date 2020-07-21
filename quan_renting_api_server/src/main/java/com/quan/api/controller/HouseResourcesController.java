@@ -1,0 +1,34 @@
+package com.quan.api.controller;
+
+import com.quan.api.service.HouseResourcesService;
+import com.quan.pojo.HouseResources;
+import org.springframework.beans.factory.annotation.Autowired;
+import org.springframework.http.HttpStatus;
+import org.springframework.http.ResponseEntity;
+import org.springframework.stereotype.Controller;
+import org.springframework.web.bind.annotation.*;
+
+@Controller
+@RequestMapping("house/resources")
+public class HouseResourcesController {
+    @Autowired
+    private HouseResourcesService houseResourcesService;
+    @PostMapping
+    @ResponseBody
+    public ResponseEntity<Void> save(@RequestBody HouseResources houseResources){
+        try {
+            boolean bool = this.houseResourcesService.save(houseResources);
+            if(bool){
+                return ResponseEntity.status(HttpStatus.CREATED).build();
+            }
+        } catch (Exception e) {
+            e.printStackTrace();
+        }
+        return ResponseEntity.status(HttpStatus.INTERNAL_SERVER_ERROR).build();
+    }
+    @GetMapping
+    @ResponseBody
+    public ResponseEntity<String> get(){
+        return ResponseEntity.ok("ok");
+    }
+}
