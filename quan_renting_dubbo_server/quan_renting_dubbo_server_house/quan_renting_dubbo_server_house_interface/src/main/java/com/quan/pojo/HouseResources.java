@@ -1,5 +1,7 @@
 package com.quan.pojo;
 
+import com.baomidou.mybatisplus.annotation.IdType;
+import com.baomidou.mybatisplus.annotation.TableId;
 import com.baomidou.mybatisplus.annotation.TableName;
 import lombok.Data;
 import lombok.experimental.Accessors;
@@ -22,6 +24,8 @@ public class HouseResources extends BasePojo {
     /**
      * 房源标题
      */
+    @TableId(value = "id", type = IdType.AUTO)
+    private Long id;
     private String title;
 
     /**

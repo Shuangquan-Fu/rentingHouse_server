@@ -108,4 +108,9 @@ public abstract class BaseService<T extends BasePojo> {
     public Integer deleteByWhere(T record){
         return this.mapper.delete(new QueryWrapper<>(record));
     }
+    public IPage<T> queryPageList(QueryWrapper<T> queryWrapper, Integer page,
+                                  Integer rows) {
+// 获取分页数据
+        return this.mapper.selectPage(new Page<T>(page, rows), queryWrapper);
+    }
 }

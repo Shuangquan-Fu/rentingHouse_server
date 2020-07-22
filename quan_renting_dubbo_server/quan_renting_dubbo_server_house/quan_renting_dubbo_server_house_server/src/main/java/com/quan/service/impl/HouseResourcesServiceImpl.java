@@ -1,6 +1,9 @@
 package com.quan.service.impl;
 
+import com.baomidou.mybatisplus.core.conditions.query.QueryWrapper;
+import com.baomidou.mybatisplus.core.metadata.IPage;
 import com.quan.pojo.HouseResources;
+import com.quan.pojo.PageInfo;
 import com.quan.service.BaseService;
 import com.quan.service.HouseResourcesService;
 import org.apache.commons.lang3.StringUtils;
@@ -18,5 +21,13 @@ public class HouseResourcesServiceImpl extends BaseService<HouseResources> imple
         }
 // 其他校验以及逻辑省略 ……
         return super.save(houseResources);
+    }
+
+    @Override
+    public PageInfo<HouseResources> queryHouseResourcesList(int page, int pageSize, HouseResources queryCondition) {
+        QueryWrapper<HouseResources> queryWrapper = new QueryWrapper<>(queryCondition);
+        queryWrapper.orderByDesc("updated");
+        IPage ipage = super.queryPageList(queryWrapper,page,pageSize);
+        return new PageInfo<HouseResources>(Long.valueOf(ipage.getTotal()).intValue(),page,pageSize,ipage.getRecords());
     }
 }

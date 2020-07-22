@@ -1,5 +1,6 @@
 package com.quan.api.controller;
 
+import com.quan.api.entity.TableResult;
 import com.quan.api.service.HouseResourcesService;
 import com.quan.pojo.HouseResources;
 import org.springframework.beans.factory.annotation.Autowired;
@@ -28,7 +29,12 @@ public class HouseResourcesController {
     }
     @GetMapping
     @ResponseBody
-    public ResponseEntity<String> get(){
-        return ResponseEntity.ok("ok");
+    public ResponseEntity<TableResult> list(HouseResources houseResources,
+                                            @RequestParam(name = "currentPage",
+                                                    defaultValue = "1") Integer currentPage,
+                                            @RequestParam(name = "pageSize",
+                                                    defaultValue = "10") Integer pageSize) {
+        return
+                ResponseEntity.ok(this.houseResourcesService.queryList(houseResources, currentPage, pageSize));
     }
 }
