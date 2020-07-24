@@ -30,4 +30,7 @@ public class HouseResourcesServiceImpl extends BaseService<HouseResources> imple
         IPage ipage = super.queryPageList(queryWrapper,page,pageSize);
         return new PageInfo<HouseResources>(Long.valueOf(ipage.getTotal()).intValue(),page,pageSize,ipage.getRecords());
     }
+    public HouseResources queryHouseResourcesById(Long id) {
+        return super.queryById(id);
+    }
 }
