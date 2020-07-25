@@ -9,18 +9,9 @@
     </parent>
     <modelVersion>4.0.0</modelVersion>
 
-    <artifactId>quan_renting_dubbo_server_house</artifactId>
-    <packaging>pom</packaging>
-    <modules>
-        <module>quan_renting_dubbo_server_house_interface</module>
-        <module>quan_renting_dubbo_server_house_server</module>
-    </modules>
+    <artifactId>quan_renting_dubbo_server_common</artifactId>
+
     <dependencies>
-        <dependency>
-            <groupId>com.quan</groupId>
-            <artifactId>quan_renting_dubbo_server_common</artifactId>
-            <version>1.0-SNAPSHOT</version>
-        </dependency>
         <dependency>
             <groupId>org.projectlombok</groupId>
             <artifactId>lombok</artifactId>
@@ -40,4 +31,5 @@
             <optional>true</optional>
         </dependency>
     </dependencies>
+
 </project>

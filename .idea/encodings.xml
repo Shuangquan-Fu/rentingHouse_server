@@ -2,6 +2,12 @@
 <project version="4">
   <component name="Encoding">
     <file url="file://$PROJECT_DIR$/quan_renting_api_server/src/main/java" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/quan_renting_dubbo_server/quan_renting_dubbo_server_ad/quan_renting_dubbo_server_ad_interface/src/main/java" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/quan_renting_dubbo_server/quan_renting_dubbo_server_ad/quan_renting_dubbo_server_ad_interface/src/main/resources" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/quan_renting_dubbo_server/quan_renting_dubbo_server_ad/quan_renting_dubbo_server_ad_server/src/main/java" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/quan_renting_dubbo_server/quan_renting_dubbo_server_ad/src/main/java" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/quan_renting_dubbo_server/quan_renting_dubbo_server_ad/src/main/resources" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/quan_renting_dubbo_server/quan_renting_dubbo_server_common/src/main/java" charset="UTF-8" />
     <file url="file://$PROJECT_DIR$/quan_renting_dubbo_server/quan_renting_dubbo_server_generator/src/main/java" charset="UTF-8" />
     <file url="file://$PROJECT_DIR$/quan_renting_dubbo_server/quan_renting_dubbo_server_house/quan_renting_dubbo_server_house_interface/src/main/java" charset="UTF-8" />
     <file url="file://$PROJECT_DIR$/quan_renting_dubbo_server/quan_renting_dubbo_server_house/quan_renting_dubbo_server_house_server/src/main/java" charset="UTF-8" />

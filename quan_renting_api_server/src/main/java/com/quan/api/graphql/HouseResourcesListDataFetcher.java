@@ -3,7 +3,9 @@ package com.quan.api.graphql;
 import com.quan.api.service.HouseResourcesService;
 import graphql.schema.DataFetchingEnvironment;
 import org.springframework.beans.factory.annotation.Autowired;
+import org.springframework.stereotype.Component;
 
+@Component
 public class HouseResourcesListDataFetcher implements MydataFetcher {
 
     @Autowired

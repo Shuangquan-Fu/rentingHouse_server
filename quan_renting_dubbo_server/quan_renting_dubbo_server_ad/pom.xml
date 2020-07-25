@@ -9,12 +9,13 @@
     </parent>
     <modelVersion>4.0.0</modelVersion>
 
-    <artifactId>quan_renting_dubbo_server_house</artifactId>
+    <artifactId>quan_renting_dubbo_server_ad</artifactId>
     <packaging>pom</packaging>
     <modules>
-        <module>quan_renting_dubbo_server_house_interface</module>
-        <module>quan_renting_dubbo_server_house_server</module>
+        <module>quan_renting_dubbo_server_ad_interface</module>
+        <module>quan_renting_dubbo_server_ad_server</module>
     </modules>
+
     <dependencies>
         <dependency>
             <groupId>com.quan</groupId>
@@ -40,4 +41,5 @@
             <optional>true</optional>
         </dependency>
     </dependencies>
+
 </project>

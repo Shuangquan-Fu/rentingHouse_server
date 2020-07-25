@@ -3,25 +3,24 @@
          xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
          xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd">
     <parent>
-        <artifactId>quan_renting</artifactId>
+        <artifactId>quan_renting_dubbo_server_ad</artifactId>
         <groupId>com.quan</groupId>
         <version>1.0-SNAPSHOT</version>
     </parent>
     <modelVersion>4.0.0</modelVersion>
 
-    <artifactId>quan_renting_dubbo_server</artifactId>
-    <packaging>pom</packaging>
-    <modules>
-        <module>quan_renting_dubbo_server_house</module>
-        <module>quan_renting_dubbo_server_generator</module>
-        <module>quan_renting_dubbo_server_common</module>
-        <module>quan_renting_dubbo_server_ad</module>
-    </modules>
+    <artifactId>quan_renting_dubbo_server_ad_server</artifactId>
 
     <dependencies>
         <dependency>
             <groupId>org.springframework.boot</groupId>
-            <artifactId>spring-boot-starter</artifactId>
+            <artifactId>spring-boot-starter-jdbc</artifactId>
+        </dependency>
+        <dependency>
+            <groupId>com.quan</groupId>
+            <artifactId>quan_renting_dubbo_server_ad_interface</artifactId>
+            <version>1.0-SNAPSHOT</version>
         </dependency>
     </dependencies>
+
 </project>

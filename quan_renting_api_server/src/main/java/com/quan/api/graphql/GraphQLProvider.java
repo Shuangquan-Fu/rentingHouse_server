@@ -31,7 +31,7 @@ public class GraphQLProvider {
     //对象初始化
     @PostConstruct
     public void init() throws FileNotFoundException {
-        File file = ResourceUtils.getFile("classpath:house.graphqls");
+        File file = ResourceUtils.getFile("classpath:Quan.graphqls");
         this.graphQL = GraphQL.newGraphQL(buildGraphQLSchema(file)).build();
     }
 

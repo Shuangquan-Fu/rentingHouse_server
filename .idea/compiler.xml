@@ -7,10 +7,13 @@
         <sourceOutputDir name="target/generated-sources/annotations" />
         <sourceTestOutputDir name="target/generated-test-sources/test-annotations" />
         <outputRelativeToContentRoot value="true" />
-        <module name="quan_renting_dubbo_server_house_server" />
-        <module name="quan_renting_dubbo_server_house_interface" />
-        <module name="quan_renting_api_server" />
+        <module name="quan_renting_dubbo_server_ad_server" />
         <module name="quan_renting_dubbo_server_generator" />
+        <module name="quan_renting_api_server" />
+        <module name="quan_renting_dubbo_server_ad_interface" />
+        <module name="quan_renting_dubbo_server_house_interface" />
+        <module name="quan_renting_dubbo_server_common" />
+        <module name="quan_renting_dubbo_server_house_server" />
       </profile>
     </annotationProcessing>
   </component>
@@ -18,6 +21,9 @@
     <option name="ADDITIONAL_OPTIONS_OVERRIDE">
       <module name="quan_renting_api_server" options="-parameters" />
       <module name="quan_renting_dubbo_server" options="-parameters" />
+      <module name="quan_renting_dubbo_server_ad_interface" options="-parameters" />
+      <module name="quan_renting_dubbo_server_ad_server" options="-parameters" />
+      <module name="quan_renting_dubbo_server_common" options="-parameters" />
       <module name="quan_renting_dubbo_server_generator" options="-parameters" />
       <module name="quan_renting_dubbo_server_house" options="-parameters" />
       <module name="quan_renting_dubbo_server_house_interface" options="-parameters" />
