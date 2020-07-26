@@ -24,6 +24,11 @@ public class HouseResourcesServiceImpl extends BaseService<HouseResources> imple
     }
 
     @Override
+    public boolean updateHouseResources(HouseResources houseResources) {
+        return super.update(houseResources) == 1;
+    }
+
+    @Override
     public PageInfo<HouseResources> queryHouseResourcesList(int page, int pageSize, HouseResources queryCondition) {
         QueryWrapper<HouseResources> queryWrapper = new QueryWrapper<>(queryCondition);
         queryWrapper.orderByDesc("updated");

@@ -11,6 +11,7 @@ import org.springframework.web.bind.annotation.*;
 
 @Controller
 @RequestMapping("house/resources")
+@CrossOrigin
 public class HouseResourcesController {
     @Autowired
     private HouseResourcesService houseResourcesService;
@@ -36,5 +37,18 @@ public class HouseResourcesController {
                                                     defaultValue = "10") Integer pageSize) {
         return
                 ResponseEntity.ok(this.houseResourcesService.queryList(houseResources, currentPage, pageSize));
+    }
+    @PutMapping
+    @ResponseBody
+    public ResponseEntity<Void> update(@RequestBody HouseResources houseResources) {
+        try {
+            boolean bool = this.houseResourcesService.update(houseResources);
+            if (bool) {
+                return ResponseEntity.status(HttpStatus.NO_CONTENT).build();
+            }
+        } catch (Exception e) {
+            e.printStackTrace();
+        }
+        return ResponseEntity.status(HttpStatus.INTERNAL_SERVER_ERROR).build();
     }
 }

@@ -6,5 +6,6 @@ import com.quan.pojo.PageInfo;
 public interface ApiHouseResourcesService {
     int saveHouseResources(HouseResources houseResources);
     PageInfo<HouseResources> queryHouseResourcesList(int page, int pageSize, HouseResources queryCondition);
-    public HouseResources queryHouseResourcesById(Long id);
+    HouseResources queryHouseResourcesById(Long id);
+    boolean updateHouseResources(HouseResources houseResources);
 }

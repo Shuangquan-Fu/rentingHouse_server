@@ -12,6 +12,7 @@ import org.springframework.stereotype.Service;
 public class HouseResourcesService {
     @Reference(version = "1.0.0")
     private ApiHouseResourcesService apiHouseResourcesService;
+
     public boolean save(HouseResources houseResources){
         int result = this.apiHouseResourcesService.saveHouseResources(houseResources);
         return result == 1;
@@ -24,5 +25,9 @@ public class HouseResourcesService {
 
     public HouseResources queryById(Long id){
         return apiHouseResourcesService.queryHouseResourcesById(id);
+    }
+
+    public boolean update(HouseResources houseResources) {
+        return this.apiHouseResourcesService.updateHouseResources(houseResources);
     }
 }
