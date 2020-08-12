@@ -26,3 +26,4 @@ The project integrates RPC and big data technologies, such as Spring Boot, Sprin
 
 ### Management System
 
+![image](https://github.com/Shuangquan-Fu/rentingHouse_server/blob/master/management.gif)
